@@ -1,0 +1,15 @@
+<form>
+  <div class="form-group">
+    <label>Title</label>
+      {{input type="text" class="form-control" value=model.title placeholder="Edit task"}}
+  </div>
+  <div class="form-group">
+    <label>Date</label>
+    {{input type="date" class="form-control" value=model.date}}
+  </div>
+  <div class="form-group">
+    <label>Description</label>
+    {{textarea class="form-control" value=model.description placeholder="Describe the task"}}
+  </div>
+  <button {{action 'editTask' model.id}} class="btn btn-success">Edit</button>
+</form>
